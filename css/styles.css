@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 1.563rem 2.5rem 1.563rem 3.125rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 1000;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+ul li a {
+    color: #E2E2E2;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #E2E2E2;
+    cursor: pointer;
+}
+
+h1 {
+    color: #E2E2E2;
+    font-size: 4.8rem;
+    line-height: 1.2;
+    margin: 2rem;
+    text-align: center;
+}
+
+.berkenDev {
+    color: #f7df1e;
+}
+
+span {
+    color: #E2E2E2;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.mySkills {
+    color: #E2E2E2;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mySkills p {
+    text-decoration: underline;
+}
+
+.skillLogos {
+    gap: 3rem;
+    padding: 0;
+}
+
+.desktopMenu {
+    display: none;
+}
+
+#burgerCloseIcon {
+    display: none;
+}
+
+#burgerMenu {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 1rem 0;
+    z-index: 999;
+    text-align: center;
+}
+
+.fixMe {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.aboutMe p {
+    margin: 2rem;
+    color: #E2E2E2;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.centerGitLink {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+}
+
+.mePicture img {
+    animation: zoomInOut 5s infinite;
+    width: 15rem;
+    height: 15rem;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #2d2e32;
+    border-radius: 20rem;
+    position: relative;
+    margin-top: 4rem;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.mainSection {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.mePicture {
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    padding: 3rem 0;
+}
+
+.knowMe {
+    border-bottom: 1px solid #E2E2E2;
+    border-top: 1px solid #E2E2E2;
+}
+
+.picturePc {
+    display: flex;
+    justify-content: center;
+}
+
+.picturePc img { 
+    width: 80%;
+    border-radius: 2rem;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.textMe {
+    color: #E2E2E2;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textMe img {
+    width: 6%;
+    margin-left: 0.5rem;
+}
+
+.textMe h3 {
+    color: #f7df1e;
+    text-align: center;
+}
+
+.textMe h4 {
+    margin: 0;
+    text-align: center;
+}
+
+.textMe p {
+    text-align: center;
+    margin: 1rem;
+}
