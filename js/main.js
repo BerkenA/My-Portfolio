@@ -13,45 +13,30 @@ document.getElementById("burgerOpen").addEventListener("click", function () {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const videos = document.querySelectorAll('.videoPlayer');
-
-    function checkVideosInView() {
-        videos.forEach(video => {
-            if (video instanceof HTMLVideoElement) {
-                const rect = video.getBoundingClientRect();
-                const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
-
-                if (isInView) {
-                    if (video.paused && video.currentTime === 0 || video.ended) {
-                        video.play();
-                    }
-                } else {
-                    video.pause();
-                }
-            }
-        });
-    }
-
-    function handleVideoEnd(event) {
-        const video = event.target;
-        const rect = video.getBoundingClientRect();
-        const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
-
-        if (isInView) {
-            video.currentTime = 0;
-            video.play();
+document.addEventListener('DOMContentLoaded', function() {
+    function handleSmoothScroll(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-scroll') || this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            console.error(`No element found with id: ${targetId}`);
         }
     }
 
-    videos.forEach(video => {
-        if (video instanceof HTMLVideoElement) {
-            video.addEventListener('ended', handleVideoEnd);
-        }
+    const links = document.querySelectorAll('nav ul li a[data-scroll]');
+    links.forEach(link => {
+        link.addEventListener('click', handleSmoothScroll);
     });
 
-    window.addEventListener('scroll', checkVideosInView);
-    checkVideosInView();
+    const burgerLinks = document.querySelectorAll('#burgerMenu a[href^="#"]');
+    burgerLinks.forEach(link => {
+        link.addEventListener('click', handleSmoothScroll);
+    });
 });
+
+
 
 
