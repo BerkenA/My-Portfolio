@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Berken Ates, a 30-year-old front-end developer with expertise in Figma, HTML, CSS, and JavaScript. Featuring projects like Tech Tips Daily, Photobomb, and Science Museum.">
+    <meta name="keywords"
+        content="Berken Ates, front-end developer, Figma, HTML, CSS, JavaScript, Tech Tips Daily, Photobomb, Science Museum, web development, portfolio">
+    <meta name="author" content="Berken Ates">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/c2d4bd022b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h3 class="berkenDev">
+                Berken.dev
+            </h3>
+            <ul class="desktopMenu">
+                <li>
+                    <a href="#home" data-scroll="home" aria-label="click here to go to home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" data-scroll="about" aria-label="click here to go to about">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" data-scroll="projects" aria-label="click here to go to projects">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" data-scroll="contact" aria-label="click here to go to contact">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            <ul class="burgerIcons">
+                <li>
+                    <div class="menuHide" id="burgerOpen" aria-label="click here to open the menu">
+                        <i class="fa-solid fa-bars fa-2xl" style="color: #e2e2e2;" id="burgerOpenIcon"></i>
+                        <i class="fa-solid fa-xmark fa-2xl" id="burgerCloseIcon" style="color: #e2e2e2;"></i>
+                    </div>
+                </li>
+            </ul>
+            <div id="burgerMenu">
+                <ul class="fixMe">
+                    <li>
+                        <a href="#Home" aria-label="click here to go home" data-scroll="home"> Home </a>
+                    </li>
+                    <li>
+                        <a href="#About" aria-label="click here to go to about me" data-scroll="about"> About </a>
+                    </li>
+                    <li>
+                        <a href="#Projects" aria-label="click here to go to my projects" data-scroll="projects">
+                            Projects </a>
+                    </li>
+                    <li>
+                        <a href="#Contact" aria-label="click here to contact me" data-scroll="contact"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <div class="mainContainer">
+                <div class="contentContainer">
+                    <div class="mainSection">
+                        <div class="aboutMe">
+                            <h1>Front-End Developer <i class="fa-solid fa-code" style="color: #f7df1e"></i></h1>
+                            <p>Hi! My name is Berken Ates and I am a skilled front-end developer based in Oslo, Norway!
+                                <i class="fa-solid fa-face-smile" style="color: #f7df1e;"></i>
+                            </p>
+                            <span class="centerGitLink">
+                                <a href="https://no.linkedin.com/in/berken-ates-0a9281171"
+                                    aria-label="click here to go to my linkedin" target="_blank"><i
+                                        class="fa-brands fa-linkedin fa-lg"></i></a>
+                                <a href="https://github.com/BerkenA" aria-label="click here to go to my github"
+                                    target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+                            </span>
+                        </div>
+                        <div class="mePicture">
+                            <img src="assets/picture-me.jpg" alt="picture of me">
+                        </div>
+                    </div>
+                </div>
+                <div class="mySkills">
+                    <p>Skills</p>
+                    <ul class="skillLogos">
+                        <li>
+                            <i class="fa-brands fa-figma fa-2xl" style="color: #B197FC;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-html5 fa-2xl" style="color: #e34c26;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-css3-alt fa-2xl" style="color: #264de4;"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-js fa-2xl" style="color: #f7df1e;"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about">
+                <div class="container">
+                    <div class="knowMe">
+                        <div class="picturePc">
+                            <img src="assets/computer-picture-white.jpg"
+                                alt="picture of a computer in beatifull surroundings">
+                        </div>
+                        <div class="textMe">
+                            <h1>About me</h1>
+                            <h4>Front-end Developer
+                                <br>
+                                based in Oslo, Norway
+                                <img src="assets/norway.png" alt="norwegian flag">
+                            </h4>
+                            <p>
+                                I'm a skilled front-end developer, with expertise in Figma,
+                                HTML,
+                                CSS, and JavaScript. Passionate about crafting exceptional user experiences, I
+                                dedicate
+                                myself to creating websites that captivate and engage users.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="myProjects">
+            <h1>Projects</h1>
+            <div class="videoDiv">
+                <img src="assets/screenshot-tech-tips-daily.png" alt="screenshot of tech tips daily website">
+                <div class="aboutTechTips">
+                    <h2>Tech Tips daily</h2>
+                    <img src="assets/Tech-tips-daily-logo.jpg" alt="tech tips daily logo">
+                </div>
+                <p class="centerText">
+                    Tech Tips Daily, a front-end development blog where I share insights and tutorials on
+                    the latest in web development. Utilizing JavaScript, I’ve integrated an API to enable seamless
+                    posting, editing, and deletion of blog posts. Additionally, I've implemented user authentication
+                    features, allowing registration of an account. The admin could also log in through the API for a
+                    personalized admin page.
+                </p>
+                <ul class="repoDemo">
+                    <li>
+                        <a href="https://github.com/BerkenA/FED1-Exam-HTML-CSS-JS-Berken"
+                            aria-label="click here to go to my tech tips daily repo" target="_blank">
+                            Repo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://fed-1-exam-html-css-js-berken.vercel.app/"
+                            aria-label="click here to go to my tech tips daily live demo" target="_blank">
+                            Live Demo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="videoDiv">
+                <img src="assets/screenshot-science-museum.png" alt="screenshot of science museum website">
+                <div class="aboutTechTips">
+                    <h2>Science Museum</h2>
+                    <img src="assets/science-museum-high-resolution-logo.png" alt="science museum logo">
+                </div>
+                <p class="centerText">
+                    Science Museum, a vibrant online museum for children aged 7-14! My site brings science to life with
+                    exciting and playful colors. Designed during my first semester exam using Figma, it combines HTML
+                    and CSS for a seamless experience. Minor JavaScript is used for the burger menu on mobile and tablet
+                    screens. Dive into interactive exhibits, fun facts, and captivating visuals!
+                </p>
+                <ul class="repoDemo">
+                    <li>
+                        <a href="https://github.com/BerkenA/my-final-exam-design-html-css"
+                            aria-label="click here to go to my science museum repo" target="_blank">
+                            Repo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://my-final-exam-design-html-css.vercel.app/index.html"
+                            aria-label="click here to go to my science museum live demo" target="_blank">
+                            Live Demo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="videoDiv">
+                <img src="assets/screenshot-frame-photography.png" alt="screenshot of frame photography website">
+                <div class="aboutTechTips">
+                    <h2>Frame Photo</h2>
+                    <img src="assets/frame-photography-logo.png" alt="frame photography logo">
+                </div>
+                <p class="centerText">
+                    Frame Photography, your premier photo service for headshots, Tinder pictures, wedding photos, and
+                    bourdoir sessions. Developed as a group project called Agency 1, our website showcases our diverse
+                    offerings. I contributed by creating the reviews and prices page. Designed with Figma and built
+                    using HTML, CSS, and JavaScript, Frame Photography offers a seamless and visually stunning
+                    experience!
+                </p>
+                <ul class="repoDemo">
+                    <li>
+                        <a href="https://github.com/kanotten/Agency1-frame"
+                            aria-label="click here to go to my frame photography repo" target="_blank">
+                            Repo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://framephotographyfed1.netlify.app/"
+                            aria-label="click here to go to my frame photography live demo" target="_blank">
+                            Live Demo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contactContainer">
+                <div class="contactBox">
+                    <div class="contactTitle">
+                        <h1>Contact</h1>
+                        <p>If you found my portfolio interesting, hit me up!</p>
+                    </div>
+                    <div class="contactMail">
+                        <span class="centerContact">
+                            <a href="mailto:berken_93@hotmail.com?subject=Berken Ates portfolio&body=Your message here."
+                                aria-label="click here to send me an email">
+                                <i class="fa-solid fa-envelope" style="color: #e2e2e2;"></i>
+                            </a>
+                            <a href="https://no.linkedin.com/in/berken-ates-0a9281171"
+                                aria-label="click here to go to my linkedin" target="_blank"><i
+                                    class="fa-brands fa-linkedin fa-lg" style="color: #0077B5"></i></a>
+                            <a href="https://github.com/BerkenA" aria-label="click here to go to my github"
+                                target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footerContainer">
+            <p>&copy; 2024 Berken Ates. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
