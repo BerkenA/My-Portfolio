@@ -58,6 +58,7 @@ h1 {
 
 .berkenDev {
     color: #f7df1e;
+    font-size: 1.5rem;
 }
 
 span {
@@ -207,17 +208,78 @@ span {
     margin-left: 0.5rem;
 }
 
-.textMe h3 {
-    color: #f7df1e;
+.textMe h1 {
+    color: #E2E2E2;
     text-align: center;
 }
 
 .textMe h4 {
     margin: 0;
     text-align: center;
+    color: #f7df1e;
 }
 
 .textMe p {
     text-align: center;
     margin: 1rem;
+}
+
+.myProjects {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.myProjects h1 {
+    margin: 2rem 0 0 0;
+}
+
+.videoDiv {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#videoPlayer {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.aboutTechTips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.aboutTechTips img {
+    width: 8%;
+    height: 40%;
+}
+
+.aboutTechTips h2 {
+    color: #f7df1e;
+    font-size: 2rem;
+}
+
+.centerText {
+    display: flex;
+    color: #E2E2E2;
+    text-align: center;
+    margin: 1rem;
+    text-align: center;
+    width: 76%;
+}
+
+.repoDemo {
+    display: flex;
+}
+
+.repoDemo a {
+    font-size: 2.6rem;
+    color: #f7df1e;
 }

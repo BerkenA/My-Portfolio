@@ -12,3 +12,46 @@ document.getElementById("burgerOpen").addEventListener("click", function () {
         burgerCloseIcon.style.display = "none";
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const videos = document.querySelectorAll('.videoPlayer');
+
+    function checkVideosInView() {
+        videos.forEach(video => {
+            if (video instanceof HTMLVideoElement) {
+                const rect = video.getBoundingClientRect();
+                const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+                if (isInView) {
+                    if (video.paused && video.currentTime === 0 || video.ended) {
+                        video.play();
+                    }
+                } else {
+                    video.pause();
+                }
+            }
+        });
+    }
+
+    function handleVideoEnd(event) {
+        const video = event.target;
+        const rect = video.getBoundingClientRect();
+        const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+        if (isInView) {
+            video.currentTime = 0;
+            video.play();
+        }
+    }
+
+    videos.forEach(video => {
+        if (video instanceof HTMLVideoElement) {
+            video.addEventListener('ended', handleVideoEnd);
+        }
+    });
+
+    window.addEventListener('scroll', checkVideosInView);
+    checkVideosInView();
+});
+
+
