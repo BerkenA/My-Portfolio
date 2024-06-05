@@ -126,6 +126,10 @@ span {
     font-size: 2rem;
 }
 
+.fa-face-smile:before {
+    margin-left: 0.5rem;
+}
+
 .centerGitLink {
     display: flex;
     justify-content: center;
@@ -181,6 +185,7 @@ span {
 .knowMe {
     border-bottom: 1px solid #E2E2E2;
     border-top: 1px solid #E2E2E2;
+    padding-top: 2rem;
 }
 
 .picturePc {
@@ -222,6 +227,7 @@ span {
 .textMe p {
     text-align: center;
     margin: 1rem;
+    padding-bottom: 2rem;
 }
 
 .myProjects {
@@ -230,7 +236,7 @@ span {
 }
 
 .myProjects h1 {
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 3rem 0;
 }
 
 .videoDiv {
@@ -239,7 +245,12 @@ span {
     max-width: 100%;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    margin: 1rem 1rem 3rem;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.videoDiv img {
+    width: 85%;
 }
 
 #videoPlayer {
@@ -257,13 +268,14 @@ span {
 }
 
 .aboutTechTips img {
-    width: 8%;
+    width: 16%;
     height: 40%;
 }
 
 .aboutTechTips h2 {
     color: #f7df1e;
-    font-size: 2rem;
+    font-size: 3rem;
+    margin: 1rem 0 1rem 0;
 }
 
 .centerText {
@@ -272,7 +284,7 @@ span {
     text-align: center;
     margin: 1rem;
     width: 76%;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .repoDemo {
