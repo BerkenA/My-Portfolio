@@ -445,7 +445,7 @@ span {
     .picturePc {
         width: 75%;
         height: 75%;
-        padding-top: 1rem;
+        padding-top: 5rem;
         justify-content: flex-start;
         margin-left: 3rem;
     }
