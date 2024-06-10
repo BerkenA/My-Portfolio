@@ -439,7 +439,7 @@ span {
 
     .textMe h4 {
         text-align: start;
-        padding-right: 3rem;
+        align-self: flex-start;
     }
 
     .picturePc {
