@@ -384,7 +384,7 @@ span {
 }
 
 /* Large (l) */
-@media (min-width: 1080px) {
+@media (min-width: 900px) {
     /* Your styles for the large breakpoint here */
     body {
         width: 100vw;
