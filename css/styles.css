@@ -18,7 +18,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 3.5rem;
-    padding: 1.563rem 2.5rem 1.563rem 3.125rem;
+    padding: 1.563rem 1.5rem 1.563rem 1.125rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -274,6 +274,26 @@ span {
     border: none;
 }
 
+.aboutScienceMuseum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.aboutScienceMuseum h2 {
+    color: #f7df1e;
+    font-size: 2rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.aboutScienceMuseum img {
+    width: 5%;
+    height: 40%;
+    border: none;
+}
+
 .centerText {
     display: flex;
     color: #E2E2E2;
@@ -359,6 +379,8 @@ span {
         flex-direction: column;
         align-items: center;
     }
+
+
 }
 
 /* Large (l) */
@@ -367,12 +389,102 @@ span {
     body {
         width: 100vw;
     }
-}
 
-/* Extra Large (l) */
-@media (min-width: 1440px) {
-    /* Your styles for the extra large breakpoint here */
-    body {
-        width: 100vw;
+    h1 {
+        margin: 0.5rem 2rem 0.5rem 3rem;
+        text-align: start;
+    }
+
+    .mainSection {
+        flex-direction: row;
+    }
+
+    .burgerIcons {
+        display: none;
+    }
+
+    .desktopMenu {
+        display: flex;
+    }
+
+    .contentContainer {
+        padding-top: 3rem;
+    }
+
+    .skillLogos {
+        gap: 5rem;
+    }
+
+    .knowMe {
+        display: flex;
+        padding-bottom: 3rem;
+    }
+
+    .textMe {
+        width: 90%;
+        padding-top: 1.5rem;
+    }
+
+    .textMe h1 {
+        text-align: start;
+        align-self: flex-start;
+        margin-left: 0;
+    }
+
+    .textMe p {
+        width: 100%;
+        text-align: start;
+        padding-right: 3rem;
+    }
+
+    .textMe h4 {
+        text-align: start;
+        padding-right: 3rem;
+    }
+
+    .picturePc {
+        width: 75%;
+        height: 75%;
+        padding-top: 1rem;
+        justify-content: flex-start;
+        margin-left: 3rem;
+    }
+
+    .picturePc img {
+        width: 80%;
+    }
+
+    .aboutMe p {
+        width: 76%;
+        margin: 0.5rem 2rem 2rem 3rem;
+        text-align: start;
+    }
+
+    .centerGitLink {
+        justify-content: flex-start;
+        padding-left: 3rem;
+    }
+
+    .mePicture img {
+        margin-right: 7rem;
+        height: 17rem;
+        width: 17rem;
+    }
+
+    .mySkills {
+        flex-direction: row;
+    }
+
+    .mySkills p {
+        padding-left: 3rem;
+        margin: 0;
+    }
+
+    .skillLogos {
+        margin-left: 3rem;
+    }
+
+    .fa-2xl {
+        font-size: 1.5em;
     }
 }
